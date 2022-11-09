@@ -2,4 +2,8 @@
     <string name="app_name">lab_4</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_android_version">Enter android version</string>
+    <string name="enter_android_code_here">Enter android code here</string>
+    <string name="add">ADD</string>
+    <string name="next">Next</string>
 </resources>
