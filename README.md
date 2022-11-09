@@ -4,11 +4,11 @@
 This has the required layouts of lab 4
 
 ### Step One
-[<img src='https://github.com/lumu-daniel/PokemonPay/blob/master/app/src/main/res/drawable/search_page.png' alt='Search for Pokemon' height='280'>]
+[<img src='https://github.com/lumu-daniel/WalmartClone/blob/master/app/src/main/res/drawable/problem_1.png' alt='Search for Pokemon' height='280'>]
 Search for the pokemon you would like to purchase.
 
 ### Step Two
-[<img src='https://github.com/lumu-daniel/PokemonPay/blob/master/app/src/main/res/drawable/details.png' alt='Pokemon Details' height='280'>]
+[<img src='https://github.com/lumu-daniel/WalmartClone/blob/master/app/src/main/res/drawable/problem_2.png' alt='Pokemon Details' height='280'>]
 View the details of the Pokemon figure and click pay button
 
 ### Step Three
