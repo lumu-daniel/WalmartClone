@@ -89,6 +89,7 @@
                 android:layout_marginBottom="100dp"
                 android:text="Forgot Password"/>
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/signIn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="30dp"
