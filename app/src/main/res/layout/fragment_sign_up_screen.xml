@@ -57,7 +57,7 @@
                         android:id="@+id/first_name_et"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword" />
+                        android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,7 +84,7 @@
                         android:id="@+id/last_name_et"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword" />
+                        android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -110,7 +110,7 @@
                         android:id="@+id/email_address_et"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword" />
+                        android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

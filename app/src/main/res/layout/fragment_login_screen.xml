@@ -23,7 +23,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sign Into Your Account"
+                    android:text="@string/sign_into_your_account"
                     android:textSize="30dp"
                     android:textFontWeight="800"
                     android:layout_marginBottom="40dp"/>
@@ -49,7 +49,7 @@
                         android:id="@+id/enter_email_et"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword" />
+                        android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,24 +79,25 @@
 
             </com.google.android.material.textfield.TextInputLayout>
             <TextView
-                android:id="@+id/forgot_pw_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="35dp"
-                android:clickable="true"
-                android:layout_marginTop="5dp"
-                android:gravity="end"
-                android:layout_marginBottom="100dp"
-                android:text="Forgot Password"/>
+                    android:id="@+id/forgot_pw_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="35dp"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="end"
+                    android:layout_marginBottom="100dp"
+                    android:text="@string/forgot_password" android:focusable="true"/>
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/signIn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="30dp"
-                android:backgroundTint="#2196F3"
-                android:textAllCaps="false"
-                android:layout_marginBottom="20dp"
-                android:text="Sign In"/>
+                    android:id="@+id/signIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="30dp"
+                    android:clickable="true"
+                    android:backgroundTint="#2196F3"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/sign_in" android:focusable="true"/>
             <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -113,7 +114,7 @@
                         android:padding="2dp"
                         android:background="@android:color/white"
                         android:layout_centerHorizontal="true"
-                        android:text="Don't Have An Account?" />
+                        android:text="@string/don_t_have_an_account" />
             </RelativeLayout>
 
             <com.google.android.material.button.MaterialButton
@@ -125,7 +126,7 @@
                     app:cornerRadius="7dp"
                     android:textColor="#2196F3"
                     android:textAllCaps="false"
-                    android:text="Create an account"
+                    android:text="@string/create_an_account"
                     app:strokeColor="#707070"/>
 
 

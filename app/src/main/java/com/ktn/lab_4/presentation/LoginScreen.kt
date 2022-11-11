@@ -12,6 +12,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.ktn.lab_4.R
 import com.ktn.lab_4.data.local.LocalDataSource.localUsers
 import com.ktn.lab_4.utils.Chores.showToast
+import com.ktn.lab_4.utils.Constants.currentUser
 import kotlinx.android.synthetic.main.fragment_login_screen.*
 
 
@@ -25,10 +26,11 @@ class LoginScreen : Fragment(R.layout.fragment_login_screen) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        signIn?.setOnClickListener {
+        signIn.setOnClickListener {
             val password = enter_password_et.findViewById<TextInputEditText>(R.id.enter_password_et).text.toString()
             val email = enter_email_et.findViewById<TextInputEditText>(R.id.enter_email_et).text.toString()
             if(localUsers.filter { it.userName_email == email }.map { it.password }.contains(password)){
+                currentUser = localUsers.filter { it.userName_email == email }.filter { it.password==password }[0]
                 findNavController().navigate(
                     LoginScreenDirections.actionLoginScreenToCategoriesScreen()
                 )
@@ -37,18 +39,18 @@ class LoginScreen : Fragment(R.layout.fragment_login_screen) {
             }
         }
 
-        create_act_btn?.setOnClickListener {
+        create_act_btn.setOnClickListener {
             findNavController().navigate(
                 LoginScreenDirections.actionLoginScreenToSignUpScreen()
             )
         }
 
-        forgot_pw_btn?.setOnClickListener{
+        forgot_pw_btn.setOnClickListener{
 
             val password = enter_password_et.findViewById<TextInputEditText>(R.id.enter_password_et).text.toString()
             val email = enter_email_et.findViewById<TextInputEditText>(R.id.enter_email_et).text.toString()
             if(!email.isEmpty()){
-                if(localUsers.map { it.password }.contains(email)){
+                if(localUsers.map { it.userName_email }.contains(email)){
                     val intent = Intent(Intent.ACTION_SENDTO)
                     intent.data = Uri.parse("mailto:")
                     intent.putExtra(Intent.EXTRA_EMAIL, email)

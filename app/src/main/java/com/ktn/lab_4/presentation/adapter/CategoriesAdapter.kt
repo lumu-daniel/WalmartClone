@@ -57,7 +57,7 @@ class CategoriesAdapter @Inject constructor(
         val category = items[position]
         holder.itemView.apply {
             glide.load(category.imageResource).into(categoryImage)
-
+            item.text = category.name
             setOnClickListener{
                 onCategoryClickListener?.let {
                     it(category)

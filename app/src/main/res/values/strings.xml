@@ -7,4 +7,9 @@
     <string name="add">ADD</string>
     <string name="next">Next</string>
     <string name="shop_by_categories">Shop By Categories</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="don_t_have_an_account">Don\'t Have An Account?</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="sign_into_your_account">Sign Into Your Account</string>
 </resources>
