@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
-            app:startDestination="@id/loginScreen">
+            app:startDestination="@id/quizFragment">
 
     <fragment android:id="@+id/loginScreen" android:name="com.ktn.lab_4.presentation.LoginScreen"
               android:label="fragment_login_screen" tools:layout="@layout/fragment_login_screen">
@@ -14,6 +14,18 @@
         <action android:id="@+id/action_signUpScreen_to_loginScreen" app:destination="@id/loginScreen"/>
     </fragment>
     <fragment android:id="@+id/categoriesScreen" android:name="com.ktn.lab_4.presentation.CategoriesFragment"
-              android:label="fragment_categories_screen" tools:layout="@layout/fragment_categories_screen"/>
+              android:label="fragment_categories_screen" tools:layout="@layout/fragment_categories_screen">
+        <action android:id="@+id/action_categoriesScreen_to_itemsFragment" app:destination="@id/itemsFragment"/>
+    </fragment>
+    <fragment android:id="@+id/quizFragment" android:name="com.ktn.lab_4.presentation.QuizFragment"
+              android:label="QuizFragment" tools:layout="@layout/fragment_quiz">
+        <action android:id="@+id/action_quizFragment_to_loginScreen" app:destination="@id/loginScreen"/>
+    </fragment>
+    <fragment android:id="@+id/itemsFragment" android:name="com.ktn.lab_4.presentation.ItemsFragment"
+              android:label="ItemsFragment" tools:layout="@layout/fragment_items">
+        <action android:id="@+id/action_itemsFragment_to_productFragment" app:destination="@id/productFragment"/>
+    </fragment>
+    <fragment android:id="@+id/productFragment" android:name="com.ktn.lab_4.presentation.ProductFragment"
+              android:label="ProductFragment" tools:layout="@layout/fragment_product"/>
 
 </navigation>

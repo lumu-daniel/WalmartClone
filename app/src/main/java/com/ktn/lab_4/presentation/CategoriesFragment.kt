@@ -3,9 +3,10 @@ package com.ktn.lab_4.presentation
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.ktn.lab_4.R
-import com.ktn.lab_4.data.local.Category
+import com.ktn.lab_4.data.local.LocalDataSource.localCategories
 import com.ktn.lab_4.presentation.adapter.CategoriesAdapter
 import com.ktn.lab_4.utils.Constants.GRID_SPAN_COUNT
 import com.ktn.lab_4.utils.Constants.currentUser
@@ -25,32 +26,15 @@ class CategoriesFragment @Inject constructor(
         super.onViewCreated(view, savedInstanceState)
         email.text = currentUser?.userName_email
         categoryAdapter.setCategoryClickListener {
-            /**
-             * Add
-            * */
+            findNavController().navigate(
+                CategoriesFragmentDirections.actionCategoriesScreenToItemsFragment()
+            )
         }
         setRecyclerView()
     }
 
     private fun setRecyclerView(){
-        categoryAdapter.items = listOf(
-            Category(
-                "Electronics",
-                R.drawable.electronics
-            ),
-            Category(
-                "clothing",
-                R.drawable.clothing
-            ),
-            Category(
-                "Beauty",
-                R.drawable.beauty
-            ),
-            Category(
-                "Food",
-                R.drawable.food
-            ),
-        )
+        categoryAdapter.items = localCategories
         categoriesList.apply {
             adapter = categoryAdapter
             layoutManager = GridLayoutManager(context,GRID_SPAN_COUNT)

@@ -16,5 +16,13 @@ Screen two Screen Shot.
 Screen three Screen Shot.
 
 ### Step Four Categories
-[<img src='https://github.com/lumu-daniel/WalmartClone/blob/Assignment-5-Lesson-6-Week-4/app/src/main/res/drawable/screenshots/categories.png' alt='Screen 3' height='280'>]
-Screen three Screen Shot.
+[<img src='https://github.com/lumu-daniel/WalmartClone/blob/Assignment-5-Lesson-6-Week-4/app/src/main/res/drawable/screenshots/categories.png' alt='Screen 4' height='280'>]
+Screen four Screen Shot.
+
+### Step Five Category Items
+[<img src='https://github.com/lumu-daniel/WalmartClone/blob/Assignment-5-Lesson-6-Week-4/app/src/main/res/drawable/screenshots/product_items.png' alt='Screen 4' height='280'>]
+Screen Five Screen Shot.
+
+### Step Six Product Details
+[<img src='https://github.com/lumu-daniel/WalmartClone/blob/Assignment-5-Lesson-6-Week-4/app/src/main/res/drawable/screenshots/single_product.png' alt='Screen 6' height='280'>]
+Screen Six Screen Shot.
